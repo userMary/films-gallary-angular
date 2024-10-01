@@ -1,0 +1,20 @@
+<div class="card mb-3 h-100 my-class">
+    @if (film33.Poster == "N/A") {
+        <img src="no-photo.png" class="card-img-top img-fluid" alt="no photo">
+    } @else {
+        <img src="{{ film33.Poster }}" class="card-img-top img-fluid" alt="{{ film33.Title }} Poster">
+    }
+    <div class="card-body">
+        <p class="card-text"><small class="text-body-secondary">{{ film33.Type }}</small></p>
+        <h5 class="card-title">{{ film33.Title }}</h5>
+        <p class="card-text"><small class="text-body-secondary">{{ film33.Year }}</small></p>
+    </div>
+    <div class="my-class1">
+        <div class="d-grid card-footer border-0">
+            <button [routerLink]="['/film', film33.imdbID]" type="button" class="btn btn-info btn-lg">Подробнее</button>
+        </div>
+    </div>
+    
+</div>
+
+

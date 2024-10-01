@@ -1,0 +1,50 @@
+<div class="myclass">
+    <div id="details-film" class="myclass3">
+        <div class="col-5 p-3">
+            
+            @if (film1.Poster == "N/A") {
+                <img src="/no-photo.png" class="card-img-top img-fluid" alt="no photo">
+            } @else {
+                <img src="{{film1.Poster}}" alt="{{film1.Title}} poster">
+            }
+        </div>
+    </div>
+
+    <div class="myclass2">
+        <div class="col-7 p-3">
+            <div class="row mt-3">
+                <div class="col-4 fw-bold">Title:</div>
+                <div class="col-8">{{film1.Title}}</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-4 fw-bold">Released:</div>
+                <div class="col-8">{{film1.Released}}</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-4 fw-bold">Genre:</div>
+                <div class="col-8">{{film1.Genre}}</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-4 fw-bold">Country:</div>
+                <div class="col-8">{{film1.Country}}</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-4 fw-bold">Director:</div>
+                <div class="col-8">{{film1.Director}}</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-4 fw-bold">Writer</div>
+                <div class="col-8">{{film1.Writer}}</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-4 fw-bold">Actors:</div>
+                <div class="col-8">{{film1.Actors}}</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-4 fw-bold">Awards:</div>
+                <div class="col-8">{{film1.Awards}}</div>
+            </div>
+        </div>
+    </div> 
+</div>
+

@@ -1,0 +1,13 @@
+<div class="row my-class">
+    <div class="col-6 p-3">
+        <!-- <div class="col-6 offset-3 p-3"> -->
+        <app-search-form (onLoadEvent)="loadFilms($event)"/>
+    </div>
+</div>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4 mt-3">
+    @for (film11 of films6; track film11.imdbID) {
+        <app-film-card [film33]="film11"/>
+    }
+</div>
+<app-film-pagination [pages]="pages5"/>
+

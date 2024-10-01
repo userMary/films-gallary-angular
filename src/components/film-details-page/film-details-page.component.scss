@@ -1,0 +1,25 @@
+#details-film {
+    img {
+        width: 100%;
+    }
+}
+
+.myclass {
+    min-width: calc(100vh - 15vh);
+    // background-image: url('/f12.jpg');
+    color: black;
+}
+
+.myclass2 {
+     background-color:rgb(255, 213, 96);
+    //background-color: rgb(254, 248, 196);
+    display: flex;
+    justify-content: center;
+}
+
+.myclass3 {
+    background-size: cover;
+    background-image: url('/f12.jpg');
+    display: flex;
+    justify-content: center;
+}

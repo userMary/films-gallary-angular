@@ -1,0 +1,25 @@
+<nav class="navbar mt-4 p-4">
+    <div class="container-fluid justify-content-center">
+        <ul class="pagination pagination-lg">
+            @if (pages.length > 0) {
+            <li class="page-item">
+                <button type="button" class="page-link" (click)="changePage(1)">&laquo;</button>
+            </li>
+                @for (page of pages; track $index) {
+            <li class="page-item">
+                    @if(page == 0) {
+                <span class="page-link">...</span>
+                    } @else {
+                <button type="button" [class]="{'page-link': true, 'active': page === currentPage}"
+                        (click)="changePage(page)">{{page}}
+                </button>
+                    }
+            </li>
+            }
+            <li class="page-item">
+                <button type="button" class="page-link" (click)="changePage(pages.length)">&raquo;</button>
+            </li>
+            }
+        </ul>
+    </div>
+</nav>

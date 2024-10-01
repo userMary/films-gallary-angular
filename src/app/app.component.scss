@@ -1,0 +1,32 @@
+#main {
+    min-height: calc(100vh - 3.5rem);
+    // min-height: calc(100vh - 3.5rem);
+    // background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(255, 255, 255);
+    border: 1.5px solid white;
+    border-radius: 3rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 22px;
+}
+
+.my-class {
+    margin-left: 7%;
+    margin-right: 7%;
+    background-image: url('/f7.jpg');
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    min-width: calc(100vh - 5rem);
+}
+
+/*
+.my-second-class {
+    border: 2px solid white;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    // background-image: url('/f10.jpg');
+    // opacity: 0.5;
+    padding: 25px;
+}*/

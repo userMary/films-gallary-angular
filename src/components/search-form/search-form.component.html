@@ -1,0 +1,33 @@
+<!-- <h1>search-form works!!!!!!!!!!!!!!!!!!!!!!!!</h1> -->
+<!-- <div class="my-class"> -->
+    <form [formGroup]="searchForm" (ngSubmit)="action()">
+        <div class="my-class1">
+            <div class="col-3">
+                <label for="search-text" class="form-label">Название :</label>
+            </div>
+            <div class="col-9">
+                <input id="search-text" class="form-control" formControlName="s" name="s">
+                @if (s?.invalid && s?.dirty) {
+                    <span class="form-text text-danger"></span>
+                }
+            </div>
+        </div>
+        
+        <div class="my-class1">
+            <div class="col-3">
+                <label for="type-select" class="form-label">Тип :</label>
+            </div>
+            <div class="col-9">
+                <select name="type" id="type-select" class="form-select" formControlName="type">
+                    <option value="movie">Фильм</option>
+                    <option value="series">Сериал</option>
+                    <option value="episode">Эпизод</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="my-class2">
+            <button type="submit" class="btn btn-info">Поиск</button>
+        </div>
+    </form>
+<!-- </div> -->
