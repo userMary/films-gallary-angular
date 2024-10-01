@@ -3,6 +3,10 @@
 Скопируйте файл `cp src/environments/environment.development.ts src/environments/environment.ts`
 Замените OMDB_API на свой секретный ключ
 
+### 1) Скопировать репозиторий: git clone <url-of-repository>.
+### 2) Так как в СКВ (системе контроля версий) (это GIT) отсутствует папка node-modules, необходимо выполнить команду `npm install` или `npm i`.
+### 3) Запускаем проект командой: ng serve.
+
 
 # FilmsGalleryAngular
 
